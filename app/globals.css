@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #ffffff;
+  --foreground: #171717; */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-foreground: #163e23;
+  --color-secondary: #4a594f;
+  
+  --color-background: rgb(255, 247, 234);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* color: #4a594f; */
 }
+
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* color: #ddf1e4; */
+}
+
+.menuborder {
+  /* border: 4mm ridge rgba(22,62,35,255); */
+  border: thick double rgba(22,62,35,255);
+
+}
+
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.flower {
+  aspect-ratio: 1;
+  --g:/33.334% 33.334% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: 100% 50% var(--g),75% 93.301% var(--g),25% 93.301% var(--g),0% 50% var(--g),25% 6.699% var(--g),75% 6.699% var(--g),radial-gradient(100% 100%,#000 28.868%,#0000 calc(28.868% + 1px));
+}
+.flower2 {
+  aspect-ratio: 1;
+  --g:/37.02% 37.02% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: 99.228% 58.751% var(--g),56.89% 99.523% var(--g),5.03% 71.856% var(--g),15.317% 13.985% var(--g),73.535% 5.885% var(--g),radial-gradient(100% 100%,#000 25.476%,#0000 calc(25.476% + 1px));
 }

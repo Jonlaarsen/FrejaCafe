@@ -69,13 +69,9 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobile && isOpen && (
-        <div className='fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center bg-[url("/MENU2.png")] bg-cover'>
+        <div className="fixed inset-0 bg-background bg-opacity-90 z-20 flex flex-col items-center justify-center">
           <Link onClick={() => toggleOpen(false)} href={"/"}>
-            <img
-              src="/Freja.png"
-              className="w-[18rem] invert pb-10"
-              alt="logo"
-            />
+            <img src="/Freja.png" className="w-[18rem]  pb-10" alt="logo" />
           </Link>
           <motion.ul>
             {categories.map((link) => (
@@ -91,7 +87,7 @@ const Navbar = () => {
               >
                 <Link
                   href={link.path}
-                  className="text-white text-3xl md:text-5xl my-4 hover:text-blue-800 transition"
+                  className="text-foreground text-3xl md:text-5xl my-4"
                 >
                   {link.title}
                 </Link>

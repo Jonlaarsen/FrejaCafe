@@ -9,7 +9,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 0, scale: 1 }}
           animate={{ opacity: 1, y: 200, scale: 1.2 }}
-          transition={{ duration: 1.5, delay: 0.2 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
           className="w-full text-7xl lg:text-[10rem] 2xl:text-[14rem] h-[20rem] grid grid-cols-5 text-center items-center justify-center"
         >
           <div>
@@ -31,7 +31,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 0, scale: 1 }}
           animate={{ opacity: 1, y: -120, scale: 1.2 }}
-          transition={{ duration: 1.5, delay: 0.2 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
           className="w-full text-7xl lg:text-[10rem] 2xl:text-[14rem] h-[20rem] grid grid-cols-5 text-center items-center justify-center"
         >
           <div>

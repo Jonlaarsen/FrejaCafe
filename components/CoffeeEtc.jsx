@@ -34,10 +34,10 @@ const CoffeeEtc = () => {
       </div>
 
       {/* Right Side: Menu */}
-      <div className="flex flex-col items-center justify-center text-foreground w-full p-6 lg:p-12">
+      <div className="flex flex-col items-center justify-evenly text-foreground w-full p-6 lg:p-12">
         {/* Coffee and Tea Section */}
         <section className="w-full max-w-2xl">
-          <h1 className="text-3xl md:text-5xl font-light text-center pb-8">
+          <h1 className="text-3xl md:text-5xl font-light text-center pb-[10rem]">
             {coffeeCategory.category}
           </h1>
           <div className="space-y-4">

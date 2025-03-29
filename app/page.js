@@ -1,5 +1,6 @@
 import CoffeeEtc from "@/components/CoffeeEtc";
 import Day from "@/components/Day";
+import Find from "@/components/Find";
 import Hero from "@/components/Hero";
 import Night from "@/components/Night";
 import Wine from "@/components/Wine";
@@ -12,6 +13,7 @@ export default function Home() {
       <Day />
       <Night />
       <CoffeeEtc />
+      <Find />
     </div>
   );
 }

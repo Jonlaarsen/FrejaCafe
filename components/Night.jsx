@@ -33,10 +33,10 @@ const Night = () => {
           <motion.img
             initial={{ scale: 0.5 }}
             whileInView={{ scale: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.3 }}
             src="/outside.png"
-            className=" ml-[5rem] w-100 lg:w-110 flower2"
+            className="  w-100 lg:w-110 flower2"
             alt="nice food from freja cafe"
           />
         </div>
@@ -52,9 +52,9 @@ const Night = () => {
             initial={{ scale: 0.5 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
             src="./wine.png"
-            className=" ml-[-5rem] w-110 lg:w-110  flower  "
+            className="  w-110 lg:w-110  flower  "
             alt=""
           />
         </div>

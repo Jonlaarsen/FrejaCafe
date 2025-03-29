@@ -17,14 +17,20 @@ const Find = () => {
           <Link href="tel:0760234840">Telefon: 0760234840</Link>
         </h1>
         <h1>
-          <Link href="tel:0760234840">Mail: Freja@email.com</Link>
+          <Link href="mailto:info@frejacafeochvinbar.se">
+            Mail: Freja@email.com
+          </Link>
         </h1>
         <div className="text-2xl md:text-4xl">
           <button className="border-3 bg-foreground px-4 py-2 rounded-2xl text-background">
-            Instagram
+            <Link href="https://www.instagram.com/frejacafeochvinbar/">
+              Instagram
+            </Link>
           </button>
           <button className="border-3 bg-foreground px-4 py-2 rounded-2xl text-background">
-            Instagram
+            <Link href="https://www.facebook.com/frejacafeochvinbar/">
+              Facebook
+            </Link>
           </button>
         </div>
       </div>
